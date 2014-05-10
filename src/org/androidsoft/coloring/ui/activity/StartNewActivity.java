@@ -31,8 +31,6 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-import com.fairket.sdk.android.FairketApiClient;
-import com.fairket.sdk.android.FairketHelperForGingerbread;
 import com.silo.games.coloring.kids.R;
 
 import org.androidsoft.utils.ui.NoTitleActivity;
@@ -45,7 +43,7 @@ public class StartNewActivity extends NoTitleActivity implements
 		return new ResourceLoader().randomOutlineId();
 	}
 
-	private FairketApiClient mFaiirketApiClient;
+	//private FairketApiClient mFaiirketApiClient;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -55,14 +53,15 @@ public class StartNewActivity extends NoTitleActivity implements
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND,
 				WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
 
-		setContentView(R.layout.start_new);
+		View screenRootView = GestureActivity.addGestureView(R.layout.start_new, this);
+		setContentView(screenRootView);
 
 		GridView gridview = (GridView) findViewById(R.id.start_new_grid);
 		gridview.setAdapter(new ImageAdapter(this));
 
-		mFaiirketApiClient = FairketHelperForGingerbread.onCreate(this,
-				SplashActivity.FAIRKET_APP_PUBLIC_KEY,
-				SplashActivity.FAIRKET_LOG_TAG);
+		//mFaiirketApiClient = FairketHelperForGingerbread.onCreate(this,
+			//	SplashActivity.FAIRKET_APP_PUBLIC_KEY,
+			//	SplashActivity.FAIRKET_LOG_TAG);
 
 	}
 
@@ -171,20 +170,20 @@ public class StartNewActivity extends NoTitleActivity implements
 	protected void onPause() {
 		super.onPause();
 
-		FairketHelperForGingerbread.onPause(mFaiirketApiClient);
+		//FairketHelperForGingerbread.onPause(mFaiirketApiClient);
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
 
-		FairketHelperForGingerbread.onResume(mFaiirketApiClient);
+		//FairketHelperForGingerbread.onResume(mFaiirketApiClient);
 	}
 
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
 
-		FairketHelperForGingerbread.onDestroy(mFaiirketApiClient);
+		//FairketHelperForGingerbread.onDestroy(mFaiirketApiClient);
 	}
 }

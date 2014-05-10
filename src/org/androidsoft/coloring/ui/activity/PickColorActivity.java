@@ -37,7 +37,8 @@ public class PickColorActivity extends AbstractColoringActivity implements
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND,
                 WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
 
-        setContentView(R.layout.pick_color);
+        View screenRootView = GestureActivity.addGestureView(R.layout.pick_color, this);
+        setContentView(screenRootView);
 
         List<ColorButton> colorButtons = new ArrayList<ColorButton>();
         findAllColorButtons(colorButtons);

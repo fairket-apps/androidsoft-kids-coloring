@@ -21,8 +21,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.fairket.sdk.android.FairketApiClient;
-import com.fairket.sdk.android.FairketHelperForGingerbread;
 import com.silo.games.coloring.kids.R;
 
 import org.androidsoft.utils.ui.WhatsNewActivity;
@@ -38,13 +36,14 @@ public class SplashActivity extends WhatsNewActivity implements OnClickListener 
 	public static final String FAIRKET_APP_PUBLIC_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAySve+POu83Evq5DLonjfbExt9DJoDkfazLR3zeoD6xsNqdpGYOdMS0Q2u3WHpPcKUKnciPAZJd8nKvJhhMQwWoutOd0iI8VIdN7glJmni2SnF6CjCPcz5TEEd3D7MBiW68VM77QFhK+qNTKAVyRhRM5X517rbWpVNlvDB43CCJVu2nNyDFVUYv4qTcA3DPNVUnkS3ChoShuVbQyuRoc3msWzUsZDqcAl92WrqNSkvcDwtObOvpQJut5JfHeI6UkGFQzPXONvsrviwL0Vka8iKxnV+l9PsDMjb4SrGandMNQQIk/Kfy86N4LQnnx9n0HsNFwvfqAKwjwonaDruVLCQwIDAQAB";
 
 	private Button mButtonPlay;
-	private FairketApiClient mFaiirketApiClient;
+	//private FairketApiClient mFaiirketApiClient;
 
 	@Override
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
 
-		setContentView(R.layout.splash);
+		View screenRootView = GestureActivity.addGestureView(R.layout.splash, this);
+		setContentView(screenRootView);
 
 		mButtonPlay = (Button) findViewById(R.id.button_go);
 		mButtonPlay.setOnClickListener(this);
@@ -52,9 +51,9 @@ public class SplashActivity extends WhatsNewActivity implements OnClickListener 
 		ImageView image = (ImageView) findViewById(R.id.image_splash);
 		image.setImageResource(R.drawable.splash);
 		
-		mFaiirketApiClient = FairketHelperForGingerbread.onCreate(this,
-				SplashActivity.FAIRKET_APP_PUBLIC_KEY,
-				SplashActivity.FAIRKET_LOG_TAG);
+		//mFaiirketApiClient = FairketHelperForGingerbread.onCreate(this,
+			//	SplashActivity.FAIRKET_APP_PUBLIC_KEY,
+			//	SplashActivity.FAIRKET_LOG_TAG);
 
 
 	}
@@ -93,20 +92,20 @@ public class SplashActivity extends WhatsNewActivity implements OnClickListener 
 	protected void onPause() {
 		super.onPause();
 
-		FairketHelperForGingerbread.onPause(mFaiirketApiClient);
+		//FairketHelperForGingerbread.onPause(mFaiirketApiClient);
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
 
-		FairketHelperForGingerbread.onResume(mFaiirketApiClient);
+		//FairketHelperForGingerbread.onResume(mFaiirketApiClient);
 	}
 
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
 
-		FairketHelperForGingerbread.onDestroy(mFaiirketApiClient);
+		//FairketHelperForGingerbread.onDestroy(mFaiirketApiClient);
 	}
 }

@@ -63,7 +63,9 @@ public class PaintActivity extends AbstractColoringActivity implements
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.paint);
+		View screenRootView = GestureActivity.addGestureView(R.layout.paint, this);
+		setContentView(screenRootView);
+		
 		_paintView = (PaintView) findViewById(R.id.paint_view);
 		_paintView.setLifecycleListener(this);
 		_progressBar = (ProgressBar) findViewById(R.id.paint_progress);

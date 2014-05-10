@@ -18,8 +18,6 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 
-import com.fairket.sdk.android.FairketApiClient;
-import com.fairket.sdk.android.FairketHelperForGingerbread;
 import com.silo.games.coloring.kids.R;
 
 import org.androidsoft.utils.credits.CreditsParams;
@@ -33,7 +31,7 @@ import org.androidsoft.utils.ui.BasicActivity;
 public class CreditsActivity extends BasicActivity
 {
 
-    private FairketApiClient mFaiirketApiClient;
+    //private FairketApiClient mFaiirketApiClient;
 
 	@Override
     public void onCreate(Bundle icicle)
@@ -41,11 +39,12 @@ public class CreditsActivity extends BasicActivity
         super.onCreate(icicle);
 
         View view = new CreditsView(this, getCreditsParams());
-        setContentView(view);
+        View screenRootView = GestureActivity.addGestureView(view, this);
+        setContentView(screenRootView);
         
-		mFaiirketApiClient = FairketHelperForGingerbread.onCreate(this,
-				SplashActivity.FAIRKET_APP_PUBLIC_KEY,
-				SplashActivity.FAIRKET_LOG_TAG);
+		//mFaiirketApiClient = FairketHelperForGingerbread.onCreate(this,
+			//	SplashActivity.FAIRKET_APP_PUBLIC_KEY,
+			//	SplashActivity.FAIRKET_LOG_TAG);
 
     }
 	
@@ -53,21 +52,21 @@ public class CreditsActivity extends BasicActivity
 	protected void onPause() {
 		super.onPause();
 
-		FairketHelperForGingerbread.onPause(mFaiirketApiClient);
+		//FairketHelperForGingerbread.onPause(mFaiirketApiClient);
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
 
-		FairketHelperForGingerbread.onResume(mFaiirketApiClient);
+		//FairketHelperForGingerbread.onResume(mFaiirketApiClient);
 	}
 
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
 
-		FairketHelperForGingerbread.onDestroy(mFaiirketApiClient);
+		//FairketHelperForGingerbread.onDestroy(mFaiirketApiClient);
 	}
 
     /**

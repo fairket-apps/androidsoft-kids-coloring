@@ -28,15 +28,13 @@ import android.view.WindowManager;
 
 import org.androidsoft.utils.ui.NoTitleActivity;
 
-import com.fairket.sdk.android.FairketApiClient;
-import com.fairket.sdk.android.FairketHelperForGingerbread;
 
 public abstract class AbstractColoringActivity extends NoTitleActivity {
 
 	public static final String INTENT_START_NEW = "org.androidsoft.coloring.paint.START_NEW";
 	public static final String INTENT_PICK_COLOR = "org.androidsoft.coloring.paint.PICK_COLOR";
 	public static final String INTENT_ABOUT = "org.androidsoft.coloring.paint.ABOUT";
-	private FairketApiClient mFaiirketApiClient;
+	//private FairketApiClient mFaiirketApiClient;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -47,9 +45,9 @@ public abstract class AbstractColoringActivity extends NoTitleActivity {
 		_displayWidth = d.getWidth();
 		_displayHeight = d.getHeight();
 
-		mFaiirketApiClient = FairketHelperForGingerbread.onCreate(this,
-				SplashActivity.FAIRKET_APP_PUBLIC_KEY,
-				SplashActivity.FAIRKET_LOG_TAG);
+		//mFaiirketApiClient = FairketHelperForGingerbread.onCreate(this,
+			//	SplashActivity.FAIRKET_APP_PUBLIC_KEY,
+			//	SplashActivity.FAIRKET_LOG_TAG);
 
 	}
 
@@ -84,20 +82,20 @@ public abstract class AbstractColoringActivity extends NoTitleActivity {
 	protected void onPause() {
 		super.onPause();
 
-		FairketHelperForGingerbread.onPause(mFaiirketApiClient);
+		//FairketHelperForGingerbread.onPause(mFaiirketApiClient);
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
 
-		FairketHelperForGingerbread.onResume(mFaiirketApiClient);
+		//FairketHelperForGingerbread.onResume(mFaiirketApiClient);
 	}
 
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
 
-		FairketHelperForGingerbread.onDestroy(mFaiirketApiClient);
+		//FairketHelperForGingerbread.onDestroy(mFaiirketApiClient);
 	}
 }
