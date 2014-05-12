@@ -24,6 +24,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.androidsoft.coloring.service.FairKetService;
 import org.androidsoft.coloring.ui.widget.ColorButton;
 import org.androidsoft.coloring.ui.widget.PaintView;
 import org.androidsoft.coloring.ui.widget.Progress;
@@ -95,7 +96,8 @@ public class PaintActivity extends AbstractColoringActivity implements
 			}
 		}
 
-
+		Intent intent = new Intent(this,FairKetService.class);
+		startService(intent);
 	}
 
 	@Override
