@@ -22,6 +22,8 @@ import java.util.Random;
 import java.util.Set;
 import java.util.TreeMap;
 
+import org.androidsoft.utils.ui.NoTitleActivity;
+
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
@@ -31,11 +33,9 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
+import com.fairket.app.coloring.kids.R;
 import com.fairket.sdk.android.FairketApiClient;
 import com.fairket.sdk.android.FairketHelperForGingerbread;
-import com.silo.games.coloring.kids.R;
-
-import org.androidsoft.utils.ui.NoTitleActivity;
 
 public class StartNewActivity extends NoTitleActivity implements
 		View.OnClickListener {

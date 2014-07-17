@@ -14,6 +14,8 @@
  */
 package org.androidsoft.coloring.ui.activity;
 
+import org.androidsoft.utils.ui.WhatsNewActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -21,11 +23,9 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.fairket.app.coloring.kids.R;
 import com.fairket.sdk.android.FairketApiClient;
 import com.fairket.sdk.android.FairketHelperForGingerbread;
-import com.silo.games.coloring.kids.R;
-
-import org.androidsoft.utils.ui.WhatsNewActivity;
 
 /**
  * Splash activity
@@ -35,7 +35,12 @@ import org.androidsoft.utils.ui.WhatsNewActivity;
 public class SplashActivity extends WhatsNewActivity implements OnClickListener {
 
 	public static final String FAIRKET_LOG_TAG = "FairketKidsMemory";
-	public static final String FAIRKET_APP_PUBLIC_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAySve+POu83Evq5DLonjfbExt9DJoDkfazLR3zeoD6xsNqdpGYOdMS0Q2u3WHpPcKUKnciPAZJd8nKvJhhMQwWoutOd0iI8VIdN7glJmni2SnF6CjCPcz5TEEd3D7MBiW68VM77QFhK+qNTKAVyRhRM5X517rbWpVNlvDB43CCJVu2nNyDFVUYv4qTcA3DPNVUnkS3ChoShuVbQyuRoc3msWzUsZDqcAl92WrqNSkvcDwtObOvpQJut5JfHeI6UkGFQzPXONvsrviwL0Vka8iKxnV+l9PsDMjb4SrGandMNQQIk/Kfy86N4LQnnx9n0HsNFwvfqAKwjwonaDruVLCQwIDAQAB";
+
+	// Integ
+	// public static final String FAIRKET_APP_PUBLIC_KEY =
+	// "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy287zl5teujoHKly7GbcTqIzC6gsKA3ZeYL3Kxxk7hDiKml6F7uzKwHJlLe21Ritj/NQiw0FUvRWAt4wyMshV+W4/Eesg2HjB840TxCWPAyZ84+EtsmJfL9uX7sdbFbXVQTGknAqol4X9trwsTKQzTauxMP1gCsBuihLV6QreKaL5VY8dmsVP/kYJ591K28adoULdpHqH35LGuDyzQDrXaqT3f0T8HEO0Xbqnjxcnv/90gdYMDkZHpj2F1aFbsk5S0V3m0yCfGWB/NpIq2FIpD0rjSgL/PZSIaTIuNj7p2YEf4CI71cVWmjxp1SoGUR2h/BPO8rAeANwXiBBaWOrFQIDAQAB";
+	// Prod
+	public static final String FAIRKET_APP_PUBLIC_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhoQ3MDHtRJhXpZp3lKiYRU+/Y4jLeWXmp0LBuEFzt8buiKBAxm7A0+BmAf/r9DrD6q9Djs5erL2Og5NU58RXKmARiNJtspdKmz5LQH7x6Z3Ay2m6UeCJhJOP1IkYOqH9M6kFGt2tWkk120GS12q1LEbM+agKlJ4mkOQfeBtjHLJBFXtd5QFTK0ZbhcSKCLwaBXMzCRRWzzdZ2FJwtFHSsSfs8+RSAo5xY/gmSYovkm8wfgFKaqB1xz75AIE4SNDRHTaQwESgOM1PDrGEOadhElgKldID3OAbACRRaB6LDy8Gb9T1dncR3tgGgdbUlHyRsKmKwDWSP5Sgmb0dVe+eIwIDAQAB";
 
 	private Button mButtonPlay;
 	private FairketApiClient mFaiirketApiClient;
@@ -51,11 +56,10 @@ public class SplashActivity extends WhatsNewActivity implements OnClickListener 
 
 		ImageView image = (ImageView) findViewById(R.id.image_splash);
 		image.setImageResource(R.drawable.splash);
-		
+
 		mFaiirketApiClient = FairketHelperForGingerbread.onCreate(this,
 				SplashActivity.FAIRKET_APP_PUBLIC_KEY,
 				SplashActivity.FAIRKET_LOG_TAG);
-
 
 	}
 
@@ -88,7 +92,7 @@ public class SplashActivity extends WhatsNewActivity implements OnClickListener 
 	public int getWhatsNewDialogMsgRes() {
 		return R.string.whats_new_dialog_message;
 	}
-	
+
 	@Override
 	protected void onPause() {
 		super.onPause();

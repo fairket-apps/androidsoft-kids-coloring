@@ -22,7 +22,7 @@ import android.view.View;
 import android.view.WindowManager;
 import java.util.ArrayList;
 import java.util.List;
-import com.silo.games.coloring.kids.R;
+import com.fairket.app.coloring.kids.R;
 
 public class PickColorActivity extends AbstractColoringActivity implements
         View.OnClickListener

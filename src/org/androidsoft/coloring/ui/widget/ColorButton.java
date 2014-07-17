@@ -23,7 +23,7 @@ import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.GradientDrawable.Orientation;
 import android.util.AttributeSet;
 
-import com.silo.games.coloring.kids.R;
+import com.fairket.app.coloring.kids.R;
 
 public class ColorButton extends ColoringButton
 {

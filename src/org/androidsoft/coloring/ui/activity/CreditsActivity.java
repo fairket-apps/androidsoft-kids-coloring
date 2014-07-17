@@ -14,17 +14,17 @@
  */
 package org.androidsoft.coloring.ui.activity;
 
+import org.androidsoft.utils.credits.CreditsParams;
+import org.androidsoft.utils.credits.CreditsView;
+import org.androidsoft.utils.ui.BasicActivity;
+
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 
+import com.fairket.app.coloring.kids.R;
 import com.fairket.sdk.android.FairketApiClient;
 import com.fairket.sdk.android.FairketHelperForGingerbread;
-import com.silo.games.coloring.kids.R;
-
-import org.androidsoft.utils.credits.CreditsParams;
-import org.androidsoft.utils.credits.CreditsView;
-import org.androidsoft.utils.ui.BasicActivity;
 
 /**
  * Credits activity

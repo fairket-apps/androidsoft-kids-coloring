@@ -17,6 +17,8 @@
 <resources>
 
     <style name="Theme" parent="android:Theme">
+        <item name="coloringButtonStyle">@style/Widget.Button</item>
+        <item name="colorButtonStyle">@style/Widget.Button.ColorButton</item>
     </style>
     <style name="Theme.Default">
 <!--
