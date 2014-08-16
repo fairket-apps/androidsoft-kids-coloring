@@ -48,7 +48,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 
-import com.silo.games.coloring.kids.R;
+import com.fairket.app.coloring.kids.R;
 
 public class PaintActivity extends AbstractColoringActivity implements
 		PaintView.LifecycleListener {

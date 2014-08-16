@@ -15,8 +15,8 @@
  limitations under the License.
 --> 
 <resources>
-    <style name="Theme">
+    <!-- <style name="Theme">
         <item name="coloringButtonStyle">@style/Widget.Button</item>
         <item name="colorButtonStyle">@style/Widget.Button.ColorButton</item>
-    </style>
+    </style> -->
 </resources>

@@ -19,7 +19,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-import com.silo.games.coloring.kids.R;
+import com.fairket.app.coloring.kids.R;
 import org.androidsoft.coloring.ui.activity.AbstractColoringActivity;
 
 // A button that is proportional to the screen size.

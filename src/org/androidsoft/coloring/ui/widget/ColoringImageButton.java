@@ -22,7 +22,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
-import com.silo.games.coloring.kids.R;
+import com.fairket.app.coloring.kids.R;
 
 public class ColoringImageButton extends ColoringButton
 {

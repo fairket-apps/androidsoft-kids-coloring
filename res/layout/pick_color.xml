@@ -15,7 +15,7 @@
  limitations under the License.
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:coloring="http://schemas.android.com/apk/res/com.silo.games.coloring.kids"
+    xmlns:coloring="http://schemas.android.com/apk/res/com.fairket.app.coloring.kids"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >

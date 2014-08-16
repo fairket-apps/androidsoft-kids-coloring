@@ -22,6 +22,8 @@ import java.util.Random;
 import java.util.Set;
 import java.util.TreeMap;
 
+import org.androidsoft.utils.ui.NoTitleActivity;
+
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
@@ -31,11 +33,9 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
+import com.fairket.app.coloring.kids.R;
 import com.fairket.sdk.android.FairketApiClient;
-import com.fairket.sdk.android.FairketHelperForGingerbread;
-import com.silo.games.coloring.kids.R;
-
-import org.androidsoft.utils.ui.NoTitleActivity;
+import com.fairket.sdk.android.FairketAppTimeHelper;
 
 public class StartNewActivity extends NoTitleActivity implements
 		View.OnClickListener {
@@ -60,7 +60,7 @@ public class StartNewActivity extends NoTitleActivity implements
 		GridView gridview = (GridView) findViewById(R.id.start_new_grid);
 		gridview.setAdapter(new ImageAdapter(this));
 
-		mFaiirketApiClient = FairketHelperForGingerbread.onCreate(this,
+		mFaiirketApiClient = FairketAppTimeHelper.onCreate(this,
 				SplashActivity.FAIRKET_APP_PUBLIC_KEY,
 				SplashActivity.FAIRKET_LOG_TAG);
 
@@ -171,20 +171,20 @@ public class StartNewActivity extends NoTitleActivity implements
 	protected void onPause() {
 		super.onPause();
 
-		FairketHelperForGingerbread.onPause(mFaiirketApiClient);
+		FairketAppTimeHelper.onPause(mFaiirketApiClient);
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
 
-		FairketHelperForGingerbread.onResume(mFaiirketApiClient);
+		FairketAppTimeHelper.onResume(mFaiirketApiClient);
 	}
 
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
 
-		FairketHelperForGingerbread.onDestroy(mFaiirketApiClient);
+		FairketAppTimeHelper.onDestroy(mFaiirketApiClient);
 	}
 }
