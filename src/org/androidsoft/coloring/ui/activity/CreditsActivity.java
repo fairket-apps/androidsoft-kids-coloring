@@ -24,7 +24,7 @@ import android.view.View;
 
 import com.fairket.app.coloring.kids.R;
 import com.fairket.sdk.android.FairketApiClient;
-import com.fairket.sdk.android.FairketHelperForGingerbread;
+import com.fairket.sdk.android.FairketAppTimeHelper;
 
 /**
  * Credits activity
@@ -43,7 +43,7 @@ public class CreditsActivity extends BasicActivity
         View view = new CreditsView(this, getCreditsParams());
         setContentView(view);
         
-		mFaiirketApiClient = FairketHelperForGingerbread.onCreate(this,
+		mFaiirketApiClient = FairketAppTimeHelper.onCreate(this,
 				SplashActivity.FAIRKET_APP_PUBLIC_KEY,
 				SplashActivity.FAIRKET_LOG_TAG);
 
@@ -53,21 +53,21 @@ public class CreditsActivity extends BasicActivity
 	protected void onPause() {
 		super.onPause();
 
-		FairketHelperForGingerbread.onPause(mFaiirketApiClient);
+		FairketAppTimeHelper.onPause(mFaiirketApiClient);
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
 
-		FairketHelperForGingerbread.onResume(mFaiirketApiClient);
+		FairketAppTimeHelper.onResume(mFaiirketApiClient);
 	}
 
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
 
-		FairketHelperForGingerbread.onDestroy(mFaiirketApiClient);
+		FairketAppTimeHelper.onDestroy(mFaiirketApiClient);
 	}
 
     /**
