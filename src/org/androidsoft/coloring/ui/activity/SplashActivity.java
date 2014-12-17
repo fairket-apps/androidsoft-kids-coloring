@@ -26,6 +26,7 @@ import android.widget.ImageView;
 import com.fairket.app.coloring.kids.R;
 import com.fairket.sdk.android.FairketApiClient;
 import com.fairket.sdk.android.FairketAppTimeHelper;
+import com.tapjoy.TapjoyConnect;
 
 /**
  * Splash activity
@@ -37,10 +38,10 @@ public class SplashActivity extends WhatsNewActivity implements OnClickListener 
 	public static final String FAIRKET_LOG_TAG = "FairketKidsMemory";
 
 	// Integ
-	// public static final String FAIRKET_APP_PUBLIC_KEY =
-	// "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy287zl5teujoHKly7GbcTqIzC6gsKA3ZeYL3Kxxk7hDiKml6F7uzKwHJlLe21Ritj/NQiw0FUvRWAt4wyMshV+W4/Eesg2HjB840TxCWPAyZ84+EtsmJfL9uX7sdbFbXVQTGknAqol4X9trwsTKQzTauxMP1gCsBuihLV6QreKaL5VY8dmsVP/kYJ591K28adoULdpHqH35LGuDyzQDrXaqT3f0T8HEO0Xbqnjxcnv/90gdYMDkZHpj2F1aFbsk5S0V3m0yCfGWB/NpIq2FIpD0rjSgL/PZSIaTIuNj7p2YEf4CI71cVWmjxp1SoGUR2h/BPO8rAeANwXiBBaWOrFQIDAQAB";
+	 public static final String FAIRKET_APP_PUBLIC_KEY =
+	 "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy287zl5teujoHKly7GbcTqIzC6gsKA3ZeYL3Kxxk7hDiKml6F7uzKwHJlLe21Ritj/NQiw0FUvRWAt4wyMshV+W4/Eesg2HjB840TxCWPAyZ84+EtsmJfL9uX7sdbFbXVQTGknAqol4X9trwsTKQzTauxMP1gCsBuihLV6QreKaL5VY8dmsVP/kYJ591K28adoULdpHqH35LGuDyzQDrXaqT3f0T8HEO0Xbqnjxcnv/90gdYMDkZHpj2F1aFbsk5S0V3m0yCfGWB/NpIq2FIpD0rjSgL/PZSIaTIuNj7p2YEf4CI71cVWmjxp1SoGUR2h/BPO8rAeANwXiBBaWOrFQIDAQAB";
 	// Prod
-	public static final String FAIRKET_APP_PUBLIC_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhoQ3MDHtRJhXpZp3lKiYRU+/Y4jLeWXmp0LBuEFzt8buiKBAxm7A0+BmAf/r9DrD6q9Djs5erL2Og5NU58RXKmARiNJtspdKmz5LQH7x6Z3Ay2m6UeCJhJOP1IkYOqH9M6kFGt2tWkk120GS12q1LEbM+agKlJ4mkOQfeBtjHLJBFXtd5QFTK0ZbhcSKCLwaBXMzCRRWzzdZ2FJwtFHSsSfs8+RSAo5xY/gmSYovkm8wfgFKaqB1xz75AIE4SNDRHTaQwESgOM1PDrGEOadhElgKldID3OAbACRRaB6LDy8Gb9T1dncR3tgGgdbUlHyRsKmKwDWSP5Sgmb0dVe+eIwIDAQAB";
+	//public static final String FAIRKET_APP_PUBLIC_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhoQ3MDHtRJhXpZp3lKiYRU+/Y4jLeWXmp0LBuEFzt8buiKBAxm7A0+BmAf/r9DrD6q9Djs5erL2Og5NU58RXKmARiNJtspdKmz5LQH7x6Z3Ay2m6UeCJhJOP1IkYOqH9M6kFGt2tWkk120GS12q1LEbM+agKlJ4mkOQfeBtjHLJBFXtd5QFTK0ZbhcSKCLwaBXMzCRRWzzdZ2FJwtFHSsSfs8+RSAo5xY/gmSYovkm8wfgFKaqB1xz75AIE4SNDRHTaQwESgOM1PDrGEOadhElgKldID3OAbACRRaB6LDy8Gb9T1dncR3tgGgdbUlHyRsKmKwDWSP5Sgmb0dVe+eIwIDAQAB";
 
 	private Button mButtonPlay;
 	private FairketApiClient mFaiirketApiClient;
@@ -60,6 +61,11 @@ public class SplashActivity extends WhatsNewActivity implements OnClickListener 
 		mFaiirketApiClient = FairketAppTimeHelper.onCreate(this,
 				SplashActivity.FAIRKET_APP_PUBLIC_KEY,
 				SplashActivity.FAIRKET_LOG_TAG);
+
+		// Tapjoy connect
+		String tapjoyAppID = "85f873dc-78b6-4a86-b252-43d341741a56";
+		String tapjoySecretKey = "xPtHrHetEUG5iRwSDuXS";
+		TapjoyConnect.requestTapjoyConnect(this, tapjoyAppID, tapjoySecretKey);
 
 	}
 

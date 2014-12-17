@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fairket.app.coloring.kids"
-    android:versionCode="5"
-    android:versionName="1.0.2" >
+    android:versionCode="10"
+    android:versionName="1.1.1" >
 
     <uses-sdk
         android:minSdkVersion="9"
-        android:targetSdkVersion="19" />
+        android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Required for auto fetching and filling configured emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <application
         android:icon="@drawable/icon"

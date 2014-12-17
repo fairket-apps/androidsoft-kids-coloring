@@ -15,7 +15,7 @@
  limitations under the License.
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:coloring="http://schemas.android.com/apk/res/com.fairket.app.coloring.kids"
+    xmlns:coloring="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
@@ -30,42 +30,42 @@
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#8B0000" />
+                coloring:myColor="#8B0000" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#FF0000" />
+                coloring:myColor="#FF0000" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#FA8072" />
+                coloring:myColor="#FA8072" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#FFC0CB" />
+                coloring:myColor="#FFC0CB" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#FFDEAD" />
+                coloring:myColor="#FFDEAD" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#F4A460" />
+                coloring:myColor="#F4A460" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#D2691E" />
+                coloring:myColor="#D2691E" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#8B4513" />
+                coloring:myColor="#8B4513" />
         </TableRow>
 
         <TableRow>
@@ -73,42 +73,42 @@
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#800080" />
+                coloring:myColor="#800080" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#C71585" />
+                coloring:myColor="#C71585" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#FF1493" />
+                coloring:myColor="#FF1493" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#FF69B4" />
+                coloring:myColor="#FF69B4" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#FFFF00" />
+                coloring:myColor="#FFFF00" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#FFD700" />
+                coloring:myColor="#FFD700" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#FFA500" />
+                coloring:myColor="#FFA500" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#FF4500" />
+                coloring:myColor="#FF4500" />
         </TableRow>
 
         <TableRow>
@@ -116,42 +116,42 @@
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#4B0082" />
+                coloring:myColor="#4B0082" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#9400D3" />
+                coloring:myColor="#9400D3" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#FF00FF" />
+                coloring:myColor="#FF00FF" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#EE82EE" />
+                coloring:myColor="#EE82EE" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#F0E68C" />
+                coloring:myColor="#F0E68C" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#BDB76B" />
+                coloring:myColor="#BDB76B" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#808000" />
+                coloring:myColor="#808000" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#556B2F" />
+                coloring:myColor="#556B2F" />
         </TableRow>
 
         <TableRow>
@@ -159,42 +159,42 @@
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#483D8B" />
+                coloring:myColor="#483D8B" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#6A5ACD" />
+                coloring:myColor="#6A5ACD" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#4682B4" />
+                coloring:myColor="#4682B4" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#B0C4DE" />
+                coloring:myColor="#B0C4DE" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#98FB98" />
+                coloring:myColor="#98FB98" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#32CD32" />
+                coloring:myColor="#32CD32" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#228B22" />
+                coloring:myColor="#228B22" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#006400" />
+                coloring:myColor="#006400" />
         </TableRow>
 
         <TableRow>
@@ -202,42 +202,42 @@
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#000080" />
+                coloring:myColor="#000080" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#0000FF" />
+                coloring:myColor="#0000FF" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#00BFFF" />
+                coloring:myColor="#00BFFF" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#87CEEB" />
+                coloring:myColor="#87CEEB" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#ADFF2F" />
+                coloring:myColor="#ADFF2F" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#00FF00" />
+                coloring:myColor="#00FF00" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#708090" />
+                coloring:myColor="#708090" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#2F4F4F" />
+                coloring:myColor="#2F4F4F" />
         </TableRow>
 
         <TableRow>
@@ -245,42 +245,42 @@
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#008080" />
+                coloring:myColor="#008080" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#00CED1" />
+                coloring:myColor="#00CED1" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#00FFFF" />
+                coloring:myColor="#00FFFF" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#7FFFD4" />
+                coloring:myColor="#7FFFD4" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#FFFFFF" />
+                coloring:myColor="#FFFFFF" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#C0C0C0" />
+                coloring:myColor="#C0C0C0" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#808080" />
+                coloring:myColor="#808080" />
 
             <org.androidsoft.coloring.ui.widget.ColorButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                coloring:color="#404040" />
+                coloring:myColor="#404040" />
         </TableRow>
     </TableLayout>
 

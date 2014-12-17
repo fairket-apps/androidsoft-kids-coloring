@@ -19,6 +19,6 @@
     <attr name="colorButtonStyle" format="reference" />
 
     <declare-styleable name="ColorButton">
-        <attr name="color" format="color" />
+        <attr name="myColor" format="color" />
     </declare-styleable>
 </resources>
